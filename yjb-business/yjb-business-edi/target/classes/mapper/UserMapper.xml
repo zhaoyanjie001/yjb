@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.yjb.business.edi.dao.UserMapper">
+	<resultMap id="BaseResultMap" type="org.yjb.business.edi.entity.UserEntity">
+		<id column="id" jdbcType="BIGINT" property="id" />
+		<id column="cnt" jdbcType="BIGINT" property="cnt" />
+		<result column="email" jdbcType="VARCHAR" property="email" />
+		<result column="password" jdbcType="VARCHAR" property="password" />
+		<result column="username" jdbcType="VARCHAR" property="username" />
+	</resultMap>
+	<select id="selectUser"
+		resultType="org.yjb.business.edi.entity.UserEntity">
+		SELECT id ,email,password,username from users
+		<where>
+			<if test="id != null and id != ''">
+				id = ${id}
+			</if>
+		</where>
+	</select>
+	<select id="selectUserLimit"
+		resultType="org.yjb.business.edi.entity.UserEntity">
+		SELECT id ,email,password,username from users limit ${limit}
+		--SELECT  id,email,password,username from users where username = #{name} and password = #{pwd}
+	</select>
+	<select id="selectUserById" 
+		resultType="org.yjb.business.edi.entity.UserEntity">
+		<![CDATA[ 
+		SELECT id,email,password,username from users where username = #{userDto.name} and password = #{userDto.pwd}
+		 ]]>
+	</select>
+</mapper>

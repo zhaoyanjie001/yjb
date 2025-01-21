@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yjb.business.app.dao.NewsMapper">
+	<resultMap id="BaseResultMap" type="com.yjb.business.app.entity.NewsEntity">
+		<id column="id" jdbcType="BIGINT" property="id" />
+		<result column="dt" jdbcType="VARCHAR" property="dt" />
+		<result column="url" jdbcType="VARCHAR" property="url" />
+		<result column="news" jdbcType="VARCHAR" property="news" />
+		<result column="title" jdbcType="VARCHAR" property="title" />
+		<result column="type" jdbcType="VARCHAR" property="type" />
+	</resultMap>
+
+	<select id="getNews"
+		resultType="com.yjb.business.app.entity.NewsEntity">
+		select *  from news
+	</select>
+</mapper>

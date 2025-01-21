@@ -1,0 +1,6 @@
+org\yjb\business\common\dao\UserMapper.class
+org\yjb\business\common\entity\UserEntity.class
+org\yjb\business\common\entity\BooksEntity.class
+org\yjb\business\common\dto\UserDto.class
+org\yjb\business\common\dto\BooksDto.class
+org\yjb\business\common\dao\BooksMapper.class

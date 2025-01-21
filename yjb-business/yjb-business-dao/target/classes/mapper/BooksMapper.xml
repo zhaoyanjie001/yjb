@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yjb.business.common.dao.BooksMapper">
+	<resultMap id="BaseResultMap" type="com.yjb.business.common.entity.BooksEntity">
+		<id column="zlibrary_id" jdbcType="BIGINT" property="zlibraryId" />
+		<result column="filesize" jdbcType="VARCHAR" property="filesize" />
+		<result column="title" jdbcType="VARCHAR" property="title" />
+		<result column="language" jdbcType="VARCHAR" property="language" />
+	</resultMap>
+	<select id="selectBooks"
+		resultType="com.yjb.business.common.entity.BooksEntity">
+		SELECT zlibrary_id as zlibraryId,filesize,title,language,pages,date_added as dateAdded,author,year,description from books
+		<where>
+			<if test="id != null and id != ''">
+				zlibrary_id = #{id}
+			</if>
+		<if test="title != null and title != ''">
+				zlibrary_id = #{title}
+			</if>
+		</where>
+	</select>
+	<select id="selectBooksLimit"
+		resultType="com.yjb.business.common.entity.BooksEntity">
+		SELECT zlibrary_id as zlibraryId,filesize,title,language,pages,date_added as dateAdded from books limit #{limit}
+	</select>
+	<select id="selectBookById"
+		resultType="com.yjb.business.common.entity.BooksEntity">
+		SELECT zlibrary_id as zlibraryId,filesize,title,language,pages,date_added as dateAdded from books where zlibrary_id = #{id}
+	</select>
+</mapper>

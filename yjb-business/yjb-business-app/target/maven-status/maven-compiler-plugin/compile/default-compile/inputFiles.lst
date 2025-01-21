@@ -1,0 +1,16 @@
+C:\Users\zyj19\eclipse-workspace\yjb\yjb-business\yjb-business-app\src\main\java\com\yjb\business\app\entity\UserEntity.java
+C:\Users\zyj19\eclipse-workspace\yjb\yjb-business\yjb-business-app\src\main\java\com\yjb\business\app\entity\BooksEntity.java
+C:\Users\zyj19\eclipse-workspace\yjb\yjb-business\yjb-business-app\src\main\java\com\yjb\business\app\dto\ResponseUserDto.java
+C:\Users\zyj19\eclipse-workspace\yjb\yjb-business\yjb-business-app\src\main\java\com\yjb\business\app\utils\HttpClientUtils.java
+C:\Users\zyj19\eclipse-workspace\yjb\yjb-business\yjb-business-app\src\main\java\com\yjb\business\app\dao\BooksMapper.java
+C:\Users\zyj19\eclipse-workspace\yjb\yjb-business\yjb-business-app\src\main\java\com\yjb\business\app\dto\RequestBooksDto.java
+C:\Users\zyj19\eclipse-workspace\yjb\yjb-business\yjb-business-app\src\main\java\com\yjb\business\app\dto\RequestUserDto.java
+C:\Users\zyj19\eclipse-workspace\yjb\yjb-business\yjb-business-app\src\main\java\com\yjb\business\app\service\BooksService.java
+C:\Users\zyj19\eclipse-workspace\yjb\yjb-business\yjb-business-app\src\main\java\com\yjb\business\app\config\DruidConfig.java
+C:\Users\zyj19\eclipse-workspace\yjb\yjb-business\yjb-business-app\src\main\java\com\yjb\business\app\App.java
+C:\Users\zyj19\eclipse-workspace\yjb\yjb-business\yjb-business-app\src\main\java\com\yjb\business\app\security\WebMvcConfig.java
+C:\Users\zyj19\eclipse-workspace\yjb\yjb-business\yjb-business-app\src\main\java\com\yjb\business\app\dao\UserMapper.java
+C:\Users\zyj19\eclipse-workspace\yjb\yjb-business\yjb-business-app\src\main\java\com\yjb\business\app\controllers\BooksController.java
+C:\Users\zyj19\eclipse-workspace\yjb\yjb-business\yjb-business-app\src\main\java\com\yjb\business\app\service\impl\BaseService.java
+C:\Users\zyj19\eclipse-workspace\yjb\yjb-business\yjb-business-app\src\main\java\com\yjb\business\app\service\IService.java
+C:\Users\zyj19\eclipse-workspace\yjb\yjb-business\yjb-business-app\src\main\java\com\yjb\business\app\service\impl\BooksServiceImpl.java

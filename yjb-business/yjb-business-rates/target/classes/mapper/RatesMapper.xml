@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yjb.business.app.dao.RatesMapper">
+	<resultMap id="BaseResultMap" type="com.yjb.business.app.entity.RatesEntity">
+		<id column="id" jdbcType="BIGINT" property="id" />
+		<result column="currency_name" jdbcType="VARCHAR" property="currency_name" />
+		<result column="code" jdbcType="VARCHAR" property="code" />
+		<result column="buy_exchange" jdbcType="VARCHAR" property="buy_exchange" />
+		
+		<result column="buy_cash" jdbcType="VARCHAR" property="buy_cash" />
+		<result column="selling_exchange" jdbcType="VARCHAR" property="selling_exchange" />
+		<result column="selling_cash" jdbcType="VARCHAR" property="selling_cash" />
+		<result column="bank_conversion" jdbcType="VARCHAR" property="bank_conversion" />
+	</resultMap>
+
+	<select id="ratesMapper"
+		resultType="java.lang.Integer">
+		select count(id) as id from rate_times
+	</select>
+	<select id="getRates"
+		resultType="com.yjb.business.app.entity.RatesEntity">
+		select *  from rates
+	</select>
+</mapper>
